@@ -1,0 +1,442 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;700;900&display=swap");
+address {
+  font-style: normal;
+}
+
+body {
+  background-image: url("./img/background.png");
+  background-repeat: no-repeat;
+  font-family: "Inter";
+  cursor: default;
+}
+
+button {
+  cursor: pointer;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+a,
+a:visited {
+  color: inherit;
+  text-decoration: none;
+}
+
+.container {
+  margin: 0 auto;
+  width: 1140px;
+  color: white;
+}
+
+.menu {
+  padding-top: 46px;
+  margin: 0;
+}
+.menu .nav {
+  display: flex;
+  justify-content: space-between;
+}
+.menu .nav__menu {
+  display: flex;
+}
+.menu .nav__menu .logo {
+  margin-top: 11px;
+  width: 165px;
+  font-family: "Montserrat";
+  font-weight: 300;
+}
+.menu .nav__menu .logo .logo__text {
+  margin: 0;
+  margin-top: 10px;
+  width: 80%;
+  font-size: 10px;
+  color: #e4e5ea;
+}
+.menu .nav__menu__navigation {
+  padding-left: 52px;
+  font-size: 16px;
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+.menu .nav__menu__navigation__el:not(:first-child) {
+  padding-left: 30px;
+}
+.menu .nav__contacts {
+  margin-top: 15px;
+  font-size: 16px;
+  display: flex;
+}
+.menu .nav__contacts__tel {
+  margin-right: 45px;
+}
+.menu .nav__contacts__social {
+  display: flex;
+  margin-top: 0;
+}
+.menu .nav__contacts__social__el:not(:first-child) {
+  padding-left: 30px;
+}
+
+main {
+  margin-top: 90px;
+  display: flex;
+  justify-content: space-between;
+}
+main strong {
+  background: linear-gradient(92deg, #fcb045 27.14%, #ff3f78 121.36%), #e4e5ea;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+main .tagline__header {
+  width: 362px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+}
+main .tagline__header_bold {
+  display: block;
+  font-weight: 900;
+  font-size: 48px;
+}
+main .tagline__text {
+  margin-top: 30px;
+  font-family: "Montserrat";
+  font-size: 18px;
+  width: 275px;
+}
+main .consultation {
+  text-align: right;
+  width: 310px;
+}
+main .consultation__header {
+  font-size: 18px;
+  font-family: "Inter";
+  font-weight: 500;
+}
+main .consultation__header_bold {
+  font-family: "Inter";
+  font-weight: 500;
+}
+main .consultation__list {
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+main .consultation__element {
+  margin-top: 30px;
+  font-weight: 400;
+  width: 135px;
+}
+main .consultation__element__header {
+  text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 6px;
+  font-size: 18px;
+}
+main .consultation__element__text {
+  margin: 0;
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+}
+main .consultation__element__text_small {
+  display: none;
+}
+main .consultation__btn {
+  font-family: "Inter";
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  padding: 21px 34px;
+  background-color: #4077f3;
+  color: white;
+  margin-top: 57px;
+  margin-right: 13px;
+  border: none;
+}
+
+footer {
+  margin-bottom: 20px;
+  margin-top: 128px;
+}
+footer .footer__container-header {
+  margin: 0;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 14px;
+  color: #656566;
+}
+footer .footer__container-el {
+  font-family: "Inter";
+  font-weight: 300;
+  font-size: 16px;
+}
+footer .footer {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 33px;
+}
+footer .about__list {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  grid-row-gap: 10px;
+}
+footer .menu-footer__list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-row-gap: 10px;
+}
+footer .contacts-footer {
+  text-align: right;
+}
+footer .contacts-footer__list {
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  grid-row-gap: 20px;
+}
+footer .contacts-footer__list__el img {
+  margin-left: 10px;
+}
+footer .privacy-policy {
+  text-align: right;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+}
+footer .privacy-policy__rights {
+  margin: 0;
+  margin-bottom: 10px;
+}
+footer .privacy-policy__policy {
+  text-decoration-line: underline;
+}
+
+@media (min-width: 1440px) {
+  body {
+    background-repeat: round;
+  }
+}
+@media (max-width: 1200px) {
+  footer {
+    margin: 100px 0 20px 0;
+  }
+  footer .footer__container-header {
+    font-size: 12px;
+  }
+  footer .footer__container-el {
+    font-size: 12px;
+  }
+  .menu .nav__contacts {
+    margin-left: 25px;
+  }
+  .menu .nav__contacts__tel {
+    display: none;
+  }
+  .menu .nav__menu__navigation {
+    padding-left: 20px;
+    font-size: 12px;
+  }
+  .menu .nav__menu__navigation__el:not(:first-child) {
+    padding-left: 10px;
+  }
+  .container {
+    margin: 0 auto;
+    width: 800px;
+  }
+}
+@media (max-width: 900px) {
+  .container {
+    width: 500px;
+  }
+  .menu {
+    padding-top: 46px;
+  }
+  .menu .nav {
+    justify-content: space-around;
+  }
+  .menu .nav .nav__contacts {
+    display: none;
+  }
+  .menu .nav__menu__navigation {
+    font-size: 12px;
+  }
+  .menu .nav__menu__navigation__el:not(:first-child) {
+    padding-left: 10px;
+  }
+  .menu .logo {
+    width: 100px;
+  }
+  .menu .logo .logo__img {
+    width: 100px;
+  }
+  .menu .logo .logo__text {
+    font-size: 8px;
+  }
+  main .tagline__header {
+    width: 200px;
+    font-size: 24px;
+  }
+  main .tagline__header_bold {
+    font-size: 32px;
+  }
+  main .tagline__text {
+    width: 200px;
+    font-size: 12px;
+  }
+  main .consultation {
+    width: 270px;
+  }
+  main .consultation__element__header {
+    font-size: 12px;
+  }
+  main .consultation__element__text {
+    font-size: 10px;
+  }
+  main .consultation__btn {
+    padding: 14px 20px;
+    font-size: 12px;
+  }
+}
+@media (max-width: 540px) {
+  header {
+    height: 55px;
+  }
+  header .menu {
+    padding: 0;
+  }
+  header .menu .nav {
+    display: inline;
+  }
+  header .menu .nav__menu {
+    display: inline;
+  }
+  header .menu .nav__menu .logo {
+    display: none;
+  }
+  header .menu .nav__menu__navigation {
+    margin: 0;
+    font-size: 12px;
+    padding: 20px 0;
+    justify-content: space-around;
+  }
+  header .menu .nav__menu__navigation__certificates {
+    display: none;
+  }
+  header .menu .nav__menu__navigation__el {
+    text-transform: uppercase;
+  }
+  .container {
+    width: 90%;
+  }
+  .wrapper {
+    height: 55px;
+    background-color: #0e1014;
+  }
+  .wrapper-footer {
+    background: linear-gradient(to top, #0e1014 57%, transparent 25% 50%, transparent 75%);
+  }
+  main {
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 40px;
+  }
+  main .tagline {
+    width: 272px;
+  }
+  main .tagline__header {
+    margin: 0;
+    font-size: 36px;
+  }
+  main .tagline__header_bold {
+    font-weight: 900;
+    font-size: 36px;
+  }
+  main .tagline__text {
+    font-size: 18px;
+    width: 270px;
+    margin-bottom: 45px;
+    margin-top: 15px;
+  }
+  main .consultation {
+    text-align: left;
+  }
+  main .consultation__header {
+    margin: 0;
+    margin-bottom: 6px;
+  }
+  main .consultation__header_bold {
+    text-transform: lowercase;
+  }
+  main .consultation__element {
+    width: 122px;
+    margin-top: 14px;
+    list-style-image: url("./img/list-style.png");
+  }
+  main .consultation__element__header {
+    display: none;
+  }
+  main .consultation__element__text_small {
+    font-size: 13px;
+    display: block;
+    text-transform: uppercase;
+  }
+  main .consultation__element__text_big {
+    display: none;
+  }
+  main .consultation__list {
+    justify-content: center;
+    position: relative;
+    left: 5px;
+    justify-content: center;
+  }
+  main .consultation__btn {
+    display: none;
+  }
+  footer {
+    height: 600px;
+  }
+  footer .footer {
+    display: block;
+  }
+  footer .footer__container-header {
+    font-size: 12px;
+    margin-bottom: 20px;
+  }
+  footer .footer__container-el {
+    font-size: 14px;
+  }
+  footer .footer .menu-footer {
+    margin-top: 30px;
+  }
+  footer .footer .contacts-footer {
+    margin-top: 30px;
+    text-align: left;
+  }
+  footer .footer .contacts-footer__list {
+    grid-row-gap: 10px;
+  }
+  footer .footer .contacts-footer__list__el img {
+    margin-left: 0;
+  }
+  footer .privacy-policy {
+    text-align: left;
+  }
+}
+@media (max-width: 320px) {
+  body {
+    background-image: url(img/min-bg.png);
+    background-position-y: 55px;
+  }
+}/*# sourceMappingURL=style.css.map */
